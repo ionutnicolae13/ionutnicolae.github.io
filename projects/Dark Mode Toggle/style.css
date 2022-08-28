@@ -1,0 +1,41 @@
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 24px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+button {
+  position: fixed;
+  top: 20px;
+  right: 50px;
+
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  font-size: 28px;
+  transition: all 500ms;
+}
+
+button:hover {
+  color: rgb(158, 158, 158);
+}
+
+.dark-mode button {
+  color: white;
+}
+
+.dark-mode button:hover {
+  color: rgb(158, 158, 158);
+}
+
+@media only screen and (max-width: 31.25rem) {
+  body {
+    font-size: 18px;
+  }
+}

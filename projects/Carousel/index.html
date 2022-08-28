@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="slideshow-container">
+        <div class="slides fade">
+            <div class="number">1 / 7</div>
+            <img src="./img/beach.jpg" alt="beach">
+            <div class="text">Beach</div>
+        </div>
+
+        <div class="slides fade">
+            <div class="number">2 / 7</div>
+            <img src="./img/cascade.jpg" alt="cascade">
+            <div class="text">Cascade</div>
+        </div>
+
+        <div class="slides fade">
+            <div class="number">3 / 7</div>
+            <img src="./img/city-black.jpg" alt="city-black">
+            <div class="text">City-Black</div>
+        </div>
+
+        <div class="slides fade">
+            <div class="number">4 / 7</div>
+            <img src="./img/city.jpg" alt="city">
+            <div class="text">City</div>
+        </div>
+
+        <div class="slides fade">
+            <div class="number">5 / 7</div>
+            <img src="./img/mountains.jpg" alt="mountains">
+            <div class="text">Mountains</div>
+        </div>
+
+        <div class="slides fade">
+            <div class="number">6 / 7</div>
+            <img src="./img/stonehenge.jpg" alt="stonehenge">
+            <div class="text">Stonehenge</div>
+        </div>
+
+        <div class="slides fade">
+            <div class="number">7 / 7</div>
+            <img src="./img/winter.jpg" alt="winter">
+            <div class="text">Winter</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div class="circles">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

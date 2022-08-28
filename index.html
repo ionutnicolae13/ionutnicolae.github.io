@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ionut Nicolae</title>
+    <meta name="keywords" content="Web Developer">
+    <meta name="description" content="Personal Portfolio - Web Developer">
+    <meta name="author" content="Ionut Nicolae">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Bonheur+Royale&family=Lato:wght@100;300;400;700;900&family=Smooch+Sans:wght@100;200;300;400;500;600;700;800;900&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/d9cd557f58.js" crossorigin="anonymous"></script>
+</head>
+<body class="container" id="page-top">
+    
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__logo">
+                <a class="logo-link" href="#page-top">Ionut Nicolae</a>
+            </div>
+            <a href="#" class="header__toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <ul class="header__main-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Despre mine</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Servicii</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portofolio">Portofoliu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header__text-box">
+            <h1 class="heading-1">Web Developer</h1>
+            <h2 class="heading-2">Creativitate si Profesionalism</h2>
+            <a href="#about" class="header__btn">Vezi Detalii</a>
+        </div>
+
+        <div class="header__social">
+            <ul class="header__social-list">
+                <li class="header__social-item">
+                    <a href="https://ro.linkedin.com/in/ionutnicolae13" target="_blank" class="header__social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="header__social-item">
+                    <a href="https://twitter.com/" target="_blank" class="header__social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="header__social-item">
+                    <a href="https://www.instagram.com/" target="_blank" class="header__social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="header__social-item">
+                    <a href="https://ro-ro.facebook.com/" target="_blank" class="header__social-link">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li class="header__social-item">
+                    <a href="https://www.youtube.com/" target="_blank" class="header__social-link">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    
+    <section class="about" id="about">
+        <div class="about__card">
+            <h4 class="heading-4">Ionut Nicolae</h4>
+            <hr class="about__card-hr">
+            <h5 class="heading-5">Cateva cuvinte despre mine</h5>
+            <hr class="about__card-hr">
+            <p class="about__card-text">
+                Bun venit pe pagina mea ! Ma numesc Ionut Nicolae, <br>
+                locuiesc in Brasov si sunt pasionat de Web Development. <br><br>
+                Din anul 2019 am studiat intensiv in acest domeniu
+                si am frecventat diverse cursuri de specialitate. <br>
+                Sunt perseverent si scopul meu este sa ating cele mai inalte standarde.
+            </p>
+            <hr class="about__card-hr">
+            <p class="about__card-text">
+                Te invit sa vizitezi sectiunea portofoliu, unde vei putea
+                explora in detaliu proiectele create de mine. <br><br>
+                Bucura-te de vizita !
+            </p>
+        </div>
+        <div class="about__skills" id="tag">
+            <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+            <script>
+                $(document).ready(function() {
+                    const entries = [
+                        { label: "HTML" },
+                        { label: "CSS" },
+                        { label: "SASS" },
+                        { label: "BOOTSTRAP" },
+                        { label: "WEB DESIGN" },
+                        { label: "JAVASCRIPT" },
+                        { label: "ANGULAR" },
+                        { label: "TYPESCRIPT" },
+                        { label: "JQUERY" },
+                        { label: "ALGORITHM" },
+                        { label: "PHP" },
+                        { label: "MySQL" },
+                        { label: "NODE.JS" }
+                    ];
+    
+                    const settings = {
+                        entries: entries,
+                        width: 640,
+                        height: 520,
+                        radius: "65%",
+                        radiusMin: 75,
+                        bgDraw: true,
+                        bgColor: "transparent",
+                        opacityOver: 1.00,
+                        opacityOut: 0.05,
+                        opacitySpeed: 6,
+                        fov: 800,
+                        speed: 1.75,
+                        fontFamily: "Courier, Arial, sans-serif",
+                        fontSize: "30",
+                        fontColor: "#a8a7a3",
+                        fontWeight: "bold",
+                        fontStyle: "normal",
+                        fontSretch: "normal",
+                        fontToUppercase: true
+                    };
+                    $("#tag").svg3DTagCloud(settings);
+                });
+            </script>
+        </div>
+    </section>
+    
+    <section class="skills" onmouseover="play()">
+        <ul class="skills__box">
+            <li class="skills__box-item">
+                <h6 class="heading-6">HTML 5 (85%)</h6>
+                <span class="bar bar1"></span>
+            </li>
+            <li class="skills__box-item">
+                <h6 class="heading-6">CSS 3 (85%)</h6>
+                <span class="bar bar2"></span>
+            </li>
+            <li class="skills__box-item">
+                <h6 class="heading-6">SASS / SCSS (70%)</h6>
+                <span class="bar bar3"></span>
+            </li>
+            <li class="skills__box-item">
+                <h6 class="heading-6">Bootstrap 4 (80%)</h6>
+                <span class="bar bar4"></span>
+            </li>
+            <li class="skills__box-item">
+                <h6 class="heading-6">Web Design (55%)</h6>
+                <span class="bar bar5"></span>
+            </li>
+        </ul>
+
+        <ul class="skills__box">
+            <li class="skills__box-item">
+                <h6 class="heading-6">JavaScript (80%)</h6>
+                <span class="bar bar6"></span>
+            </li>
+            <li class="skills__box-item">
+                <h6 class="heading-6">Angular (75%)</h6>
+                <span class="bar bar7"></span>
+            </li>
+            <li class="skills__box-item">
+                <h6 class="heading-6">TypeScript (75%)</h6>
+                <span class="bar bar8"></span>
+            </li>
+            <li class="skills__box-item">
+                <h6 class="heading-6">PHP (40%)</h6>
+                <span class="bar bar9"></span>
+            </li>
+            <li class="skills__box-item">
+                <h6 class="heading-6">MySQL (35%)</h6>
+                <span class="bar bar10"></span>
+            </li>
+        </ul>
+    </section>
+    
+
+    <section class="services" id="services">
+        <div class="services__box">
+            <div class="services__box-icon">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3 class="heading-3">Front-end Developer</h3>
+            <p class="services__box-text">
+               Site adaptabil la diverse dispozitive, optimizat pentru performanta si motoare de cautare, facandu-l rapid si accesibil.
+            </p>
+        </div>
+
+        <div class="services__box">
+            <div class="services__box-icon">
+                <i class="fas fa-pencil-ruler"></i>
+            </div>
+            <h3 class="heading-3">Web Design</h3>
+            <p class="services__box-text">
+               Design simplu, curat si elegant, creat pentru o experienta optima de utilizator.
+            </p>
+        </div>
+
+        <div class="services__box">
+            <div class="services__box-icon">
+                <i class="fas fa-drafting-compass"></i>
+            </div>
+            <h3 class="heading-3">Customizabil</h3>
+            <p class="services__box-text">
+               Personalizat, creat potrivit dorintelor tale, folosind unelte si tehnici avansate.
+            </p>
+        </div>
+    </section>
+
+    <section class="portofolio" id="portofolio">
+        <div class="portofolio__project">
+            <h4 class="heading-4">Countdown Timer</h4>
+            <a href="projects/Countdown Timer/index.html" target="_blank"
+                class="portofolio__project-link">View Project
+            </a>
+        </div>
+
+        <div class="portofolio__project">
+            <h4 class="heading-4">Guess My Number</h4>
+            <a href="projects/Guess My Number/index.html" target="_blank"
+                class="portofolio__project-link">View Project
+            </a>
+        </div>
+
+        <div class="portofolio__project">
+            <h4 class="heading-4">Counter</h4>
+            <a href="projects/Counter/index.html" target="_blank"
+                class="portofolio__project-link">View Project
+            </a>
+        </div>
+
+        <div class="portofolio__project">
+            <h4 class="heading-4">Dark Mode Toggle</h4>
+            <a href="projects/Dark Mode Toggle/index.html" target="_blank"
+                class="portofolio__project-link">View Project
+            </a>
+        </div>
+
+        <div class="portofolio__project">
+            <h4 class="heading-4">Zoom Effect</h4>
+            <a href="projects/Zoom Effect/index.html" target="_blank"
+                class="portofolio__project-link">View Project
+            </a>
+        </div>
+
+        <div class="portofolio__project">
+            <h4 class="heading-4">Modal</h4>
+            <a href="projects/Modal/index.html" target="_blank"
+                class="portofolio__project-link">View Project
+            </a>
+        </div>
+
+        <div class="portofolio__project">
+            <h4 class="heading-4">Carousel</h4>
+            <a href="projects/Carousel/index.html" target="_blank"
+                class="portofolio__project-link">View Project
+            </a>
+        </div>
+
+        <div class="portofolio__project">
+            <h4 class="heading-4">Tabs</h4>
+            <a href="projects/Tabs/index.html" target="_blank"
+                class="portofolio__project-link">View Project
+            </a>
+        </div>
+
+        <div class="portofolio__project">
+            <h4 class="heading-4">Reviews</h4>
+            <a href="projects/Reviews/index.html" target="_blank"
+                class="portofolio__project-link">View Project
+            </a>
+        </div>
+
+        <div class="portofolio__project">
+            <h4 class="heading-4">Item List</h4>
+            <a href="projects/Item List/index.html" target="_blank"
+                class="portofolio__project-link">View Project
+            </a>
+        </div>
+
+        <div class="portofolio__project">
+            <h4 class="heading-4">Menu List</h4>
+            <a href="projects/Menu/index.html" target="_blank"
+                class="portofolio__project-link">View Project
+            </a>
+        </div>
+
+        <div class="portofolio__project">
+            <h4 class="heading-4">Slider</h4>
+            <a href="projects/Slider/index.html" target="_blank"
+                class="portofolio__project-link">View Project
+            </a>
+        </div>
+
+        <div class="portofolio__project">
+            <h4 class="heading-4">Clock</h4>
+            <a href="https://clock-84368.web.app" target="_blank"
+                class="portofolio__project-link">View Project
+            </a>
+        </div>
+
+        <div class="portofolio__project">
+            <h4 class="heading-4">To-Do List</h4>
+            <a href="https://to-do-app-46c38.web.app" target="_blank"
+                class="portofolio__project-link">View Project
+            </a>
+        </div>
+
+        <div class="portofolio__project">
+            <h4 class="heading-4">E-Commerce</h4>
+            <a href="#" target="_blank"
+                class="portofolio__project-link">View Project
+            </a>
+        </div>
+
+        <div class="portofolio__project">
+            <h4 class="heading-4">Video</h4>
+            <a href="projects/Video/index.html" target="_blank"
+                class="portofolio__project-link">View Project
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <div class="footer__address">
+            <i class="fas fa-map-marker-alt"></i>
+            <h5 class="heading-5">Adresa</h5>
+            <p class="footer__address-text">Brasov, Romania</p>
+        </div>
+        <div class="footer__email">
+            <i class="fas fa-envelope"></i>
+            <h5 class="heading-5">Email</h5>
+            <p class="footer__email-text">ionut.nicolae13@yahoo.com</p>
+        </div>
+        <div class="footer__phone">
+            <i class="fas fa-phone"></i>
+            <h5 class="heading-5">Telefon</h5>
+            <p class="footer__phone-text">0720 001 281</p>
+        </div>
+
+        <p class="footer__text">Copyright &copy; 2022 - Ionut Nicolae, toate drepturile rezervate</p>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
