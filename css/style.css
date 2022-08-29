@@ -13,7 +13,7 @@ html {
       font-size: 50%; } }
 
 body {
-  color: red;
+  color: white;
   font-family: "Lato", "Teko", "Smooch Sans", "Abel", sans-serif;
   font-weight: 300;
   line-height: 1.6; }
@@ -90,7 +90,7 @@ h1::after {
 
 .header {
   grid-column: full-start / full-end;
-  background-color: black;
+  background-color: red;
   /* Sticky nav */ }
   .header__nav {
     display: grid; }
