@@ -90,7 +90,7 @@ h1::after {
 
 .header {
   grid-column: full-start / full-end;
-  background-color: red;
+  background-color: black;
   /* Sticky nav */ }
   .header__nav {
     display: grid; }
